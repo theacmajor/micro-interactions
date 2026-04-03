@@ -5,9 +5,83 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Micro Interactions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body {
+        font-family: 'Inter', -apple-system, sans-serif;
+        background: #f4f3f1;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .index {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+      }
+      .index h1 {
+        font-size: 24px;
+        font-weight: 600;
+        color: #1a1a1a;
+        letter-spacing: -0.03em;
+      }
+      .index-list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: 360px;
+      }
+      .index-link {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        padding: 18px 22px;
+        background: #fff;
+        border-radius: 16px;
+        text-decoration: none;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+        transition: box-shadow 0.2s ease, transform 0.15s ease;
+      }
+      .index-link:hover {
+        box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+        transform: translateY(-1px);
+      }
+      .index-link:active {
+        transform: scale(0.98);
+      }
+      .index-num {
+        font-size: 13px;
+        font-weight: 600;
+        color: #bbb;
+      }
+      .index-name {
+        font-size: 15px;
+        font-weight: 600;
+        color: #1a1a1a;
+        letter-spacing: -0.01em;
+      }
+      .index-arrow {
+        margin-left: auto;
+        color: #ccc;
+        font-size: 14px;
+      }
+    </style>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <div class="index">
+      <h1>Micro Interactions</h1>
+      <div class="index-list">
+        <a href="/01-depth-stepper/" class="index-link">
+          <span class="index-num">01</span>
+          <span class="index-name">Depth Stepper</span>
+          <span class="index-arrow">&rarr;</span>
+        </a>
+      </div>
+    </div>
   </body>
 </html>
