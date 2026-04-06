@@ -11,6 +11,7 @@ export default defineConfig({
         main: resolve(__dirname, 'index.html'),
         'depth-stepper': resolve(__dirname, '01-depth-stepper/index.html'),
         'linkedin-analytics': resolve(__dirname, '02-linkedin-analytics/index.html'),
+        'cloud-drift': resolve(__dirname, '03-cloud-drift/index.html'),
       },
     },
   },
